@@ -110,6 +110,8 @@ a {
 @tailwind utilities;
 
 
-body {
-  @apply bg-background text-foreground
+
+html {
+    @apply  dark dark:bg-[#040d35] 
+    ;
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export default function About() {
   return (
-    <main className='min-h-screen z-0 container mx-auto'>
+    <main className='min-h-screen z-0 container px-5 sm:px-0 mx-auto'>
       <div className='h-5'/>
       <h1>Greetings,</h1>
       <h2>I'm Prithviraj Tiwari, </h2>

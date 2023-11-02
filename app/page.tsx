@@ -19,7 +19,7 @@ export default function Home() {
       {/* Portfolio Projects */}
       <section className="container mx-auto my-10">
         <h2 className="text-center md:text-start text-2xl font-semibold mb-4">Portfolio Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 group ease-in-out transition-all duration-500">
           {/* Display your portfolio projects using CardC */}
           <CardC url="https://instagram-lite-mobile-india-public-version.vercel.app/t" title='Insta Clone Next.js (UI only)' imageSrc='https://pbs.twimg.com/media/F6hsUnVWsAAt_Ct?format=jpg' />
           <CardC url="https://my-ai-supabase-hf.vercel.app/chat" title='ChatBot with Palm 2 Model API' imageSrc='/images/chatbot.png' />

@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   function NavItem({ href, children }: { href: string; children: any }) {
-    const activeLinkClass = 'underline text-foreground-800';
+    const activeLinkClass = 'underline text-[#7A8CD8]';
     const isActive = href === pathname;
     const linkClassName = isActive ? activeLinkClass : '';
 
@@ -22,7 +22,7 @@ export default function Navbar() {
       <li>
         <Link href={href} passHref>
           <span
-            className={`${linkClassName}  hover:text-foreground-300 transition-all duration-700 ease-in-out cursor-pointer`}
+            className={`${linkClassName}  hover:text-[#4E60B0] transition-all duration-700 ease-in-out cursor-pointer`}
           >
             {children}
           </span>
