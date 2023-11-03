@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
     "@nextui-org/card": "^2.0.21",
     "@nextui-org/switch": "^2.0.21",
     "@nextui-org/system": "^2.0.10",

@@ -10,9 +10,11 @@ type CardCProps = {
 
 export default function CardC({ title, imageSrc, url }: CardCProps) {
     return (
-        <Link href={url} target="_blank" className="group">
-            <Card className="py-4 dark:bg-[#070e31] light:bg-[#d8dfff] group-hover:blur-sm hover:!blur-none hover:!scale-150 hover:z-10 ease-in-out transition-all duration-500">
+        // <Link href={url} target="_blank" className="group">
+            <Card className="py-4 dark:bg-slate-900 light:bg-slate-100
+             shadow-xl">
                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+                {/* sm:group-hover:blur-sm sm:hover:!blur-none sm:hover:!scale-150 sm:hover:z-10 ease-in-out transition-all duration-500 */}
                     <h4 className="font-bold text-large">{title}</h4>
                 </CardHeader>
                 <CardBody className="overflow-visible py-2">
@@ -25,6 +27,6 @@ export default function CardC({ title, imageSrc, url }: CardCProps) {
                     />
                 </CardBody>
             </Card>
-        </Link>
+        // </Link>
     );
 }

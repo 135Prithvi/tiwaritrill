@@ -1,22 +1,10 @@
-import Image from 'next/image';
-import ManDoll from "./_components/Modal";
-export default function Home() {
-  return (
-    <main className='min-h-screen z-0'>
-      <div className="bg-gray-100">
-        {/* Navigation bar can go here */}
+import ManDoll from "../_components/Modal";
 
-        {/* Hero Section */}
-        <section style={{ backgroundPosition: '60% 22%' }} className="hero bg-[url('/images/sleeker.webp')] text-white py-14 md:py-28 bg-no-repeat bg-cover">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold">Web Developer Portfolio</h1>
-            <p className="text-lg">Showcasing My Work</p>
-          </div>
-        </section>
-      </div>
+export default function Phone() {
+    return (
+        <main className="antialiased font-sans min-h-screen w-full">
 
-      {/* Portfolio Projects */}
-      <section className="container mx-auto my-10">
+            <section className="container mx-auto my-10">
                 <h2 className="text-center md:text-start text-2xl font-semibold mb-4">Portfolio Projects</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 group ease-in-out transition-all duration-500">
                     <ManDoll
@@ -64,8 +52,6 @@ export default function Home() {
                 </div>
 
             </section>
-
-      {/* Other Sections (About, Testimonials, Contact, Blog) can be added similarly with appropriate styling and content */}
-    </main>
-  );
+        </main>
+    )
 }

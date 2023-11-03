@@ -7,32 +7,30 @@ import { useEffect, useState } from "react";
 import { SunIcon } from "./SunIcon";
 import { MoonIcon } from "./MoonIcon";
 
-// MyButton.tsx
-
-
 export function ThemeSwitcher() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   const handleThemeToggle = (isSelected: any) => {
-    const newTheme = isSelected ? 'dark' : 'light';
-    setTheme(newTheme);
+    if (setTheme) {
+      const newTheme = isSelected ? "dark" : "light";
+      setTheme(newTheme);
+    }
   };
+
   return (
     <Switch
-      
       size="lg"
-    color="secondary"
-      startContent={theme == "dark" ? <SunIcon /> : <MoonIcon />}
-      endContent={theme == "light" ? <MoonIcon /> : <SunIcon />}
+      color="secondary"
+      startContent={theme === "dark" ? <SunIcon /> : <MoonIcon />}
+      endContent={theme === "light" ? <MoonIcon /> : <SunIcon />}
       onValueChange={handleThemeToggle}
-
     />
-  )
-};
+  );
+}
