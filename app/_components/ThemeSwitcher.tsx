@@ -28,6 +28,7 @@ export function ThemeSwitcher() {
     <Switch
       size="lg"
       color="secondary"
+      defaultChecked={theme === "dark" ? true: false}
       startContent={theme === "dark" ? <SunIcon /> : <MoonIcon />}
       endContent={theme === "light" ? <MoonIcon /> : <SunIcon />}
       onValueChange={handleThemeToggle}

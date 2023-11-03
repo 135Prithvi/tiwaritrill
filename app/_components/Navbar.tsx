@@ -33,7 +33,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-transparent p-4">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className=" mx-5 sm:mx-9 flex items-center justify-between">
         <a href="#" className="text-2xl font-semibold">
           My Portfolio
         </a>

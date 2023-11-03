@@ -77,14 +77,14 @@ export default function MyModal({ title,description, imageSrc,gurl, url }: CardC
                           className="inline-flex justify-center rounded-md border border-transparent dark:bg-[#7A8CD8] bg-[#5d6eba] px-4 py-2 text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5d6eba] focus-visible:ring-offset-2"
                           
                         >
-                          Wanna See live!
+                          live!
                         </Link>
                         <Link
                         href={gurl}
                           className="inline-flex justify-center rounded-md border border-transparent dark:bg-[#7A8CD8] bg-[#5d6eba] px-4 py-2 text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-[#5d6eba] focus-visible:ring-offset-2"
                         
                         >
-                          Github Please!
+                          Repo Please!
                         </Link>
                       </div>
                     </div>

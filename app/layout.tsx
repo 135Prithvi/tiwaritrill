@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark:bg-[#040d35] light:bg-[#afbbf4] text-foreground" >
+    <html lang="en" className="dark:bg-[#040d3500] light:bg-[#c0c9f6] text-foreground" >
       <body className={poppins.className}>
 
         <Providers>

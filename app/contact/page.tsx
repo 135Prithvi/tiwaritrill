@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
       <div className=" min-h-screen flex items-center ">
-        <div className="bg-gradient-to-bl from-[#7282C9] via-[#E8ECFF] to-[#C9D3FF] mx-auto p-8 rounded-lg shadow-lg max-w-md w-11/12">
+        <div className="bg-gradient-to-bl from-[#7282C9] via-[#E8ECFF] to-[#C9D3FF] dark:from-[#6070b7] dark:via-[#95a1dc] dark:to-[#5e78ec] mx-auto p-8 rounded-lg shadow-lg max-w-md w-11/12">
           <h1 className="text-3xl text-black font-semibold mb-4">Socials</h1>
           <div className="flex items-center space-x-4">
             <a
